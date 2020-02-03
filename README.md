@@ -8,6 +8,16 @@ This chart bootstraps a prometheus [statsd exporter](https://github.com/promethe
 
 
 
+## Adding Our Chart Repository
+
+To add the Hahow charts for your local client, run helm repo add:
+
+```console
+$ helm repo add hahow https://storage.googleapis.com/hahow-helm-charts/
+```
+
+
+
 ## Installing the Chart
 
 To install the chart with the release name `my-release`:
