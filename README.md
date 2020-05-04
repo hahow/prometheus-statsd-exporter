@@ -10,10 +10,10 @@ This chart bootstraps a prometheus [statsd exporter](https://github.com/promethe
 
 ## Adding Our Chart Repository
 
-To add the Hahow charts for your local client, run helm repo add:
+To add the Hahow charts for your local client, run `helm repo add`:
 
 ```console
-$ helm repo add hahow https://storage.googleapis.com/hahow-helm-charts/
+$ helm repo add hahow https://hahow-helm-charts.storage.googleapis.com/
 ```
 
 
