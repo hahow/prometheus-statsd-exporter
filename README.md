@@ -65,6 +65,7 @@ The following table lists the configurable parameters of the StatsD Exporter cha
 | `resources` | CPU/Memory resource requests/limits. | `{}` |
 | `securityContext` | Security options for container. | `{}` |
 | `service.type` | Type of service to create. | `ClusterIP ` |
+| `service.annotations` | Service annotations. | `{}` |
 | `serviceAccount.create` | Specifies whether a service account should be created. | `true` |
 | `serviceAccount.name` | Name of the service account. | |
 | `serviceMonitor.additionalLabels` | Additional labels to add to the ServiceMonitor. | `{}` |
