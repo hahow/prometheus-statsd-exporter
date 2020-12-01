@@ -10,10 +10,10 @@ This chart bootstraps a prometheus [statsd exporter](https://github.com/promethe
 
 ## Adding Our Chart Repository
 
-To add the Hahow charts for your local client, run helm repo add:
+To add the Hahow charts for your local client, run `helm repo add`:
 
 ```console
-$ helm repo add hahow https://storage.googleapis.com/hahow-helm-charts/
+$ helm repo add hahow https://hahow-helm-charts.storage.googleapis.com/
 ```
 
 
@@ -65,6 +65,7 @@ The following table lists the configurable parameters of the StatsD Exporter cha
 | `resources` | CPU/Memory resource requests/limits. | `{}` |
 | `securityContext` | Security options for container. | `{}` |
 | `service.type` | Type of service to create. | `ClusterIP ` |
+| `service.annotations` | Service annotations. | `{}` |
 | `serviceAccount.create` | Specifies whether a service account should be created. | `true` |
 | `serviceAccount.name` | Name of the service account. | |
 | `serviceMonitor.additionalLabels` | Additional labels to add to the ServiceMonitor. | `{}` |
