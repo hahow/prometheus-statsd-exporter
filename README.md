@@ -26,7 +26,7 @@ To install the chart with the release name `my-release`:
 $ helm install my-release hahow/prometheus-statsd-exporter
 ```
 
-The command deploys postgres exporter on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
+The command deploys statsd exporter on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
 
 
 
