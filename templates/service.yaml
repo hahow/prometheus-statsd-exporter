@@ -21,7 +21,7 @@ spec:
       protocol: TCP
       name: statsd-tcp
     {{- end }}
-    {{- if and (empty .Values.statsd.udpPort) (not (empty .Values.service.enable_separate_udp_service)) }}
+    {{- if and (not (empty .Values.statsd.udpPort)) (not .Values.service.enable_separate_udp_service) }}
     - port: {{ .Values.statsd.udpPort }}
       targetPort: statsd-udp
       protocol: UDP
