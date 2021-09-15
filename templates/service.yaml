@@ -21,7 +21,7 @@ spec:
       protocol: TCP
       name: statsd-tcp
     {{- end }}
-    {{- if and (not (empty .Values.statsd.udpPort)) (not .Values.service.enable_separate_udp_service) }}
+    {{- if and (not (empty .Values.statsd.udpPort)) (not .Values.service.enableSeparateUdpService) }}
     - port: {{ .Values.statsd.udpPort }}
       targetPort: statsd-udp
       protocol: UDP
@@ -29,7 +29,7 @@ spec:
     {{- end }}
   selector:
     {{- include "prometheus-statsd-exporter.selectorLabels" . | nindent 4 }}
-{{- if .Values.service.enable_separate_udp_service }}
+{{- if .Values.service.enableSeparateUdpService }}
 ---
 apiVersion: v1
 kind: Service

@@ -32,7 +32,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  enable_separate_udp_service: false
+  enableSeparateUdpService: false
   type: ClusterIP
   annotations: {}
 
