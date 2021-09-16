@@ -32,6 +32,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
+  enableSeparateUdpService: false
   type: ClusterIP
   annotations: {}
 
